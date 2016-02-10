@@ -1,3 +1,3 @@
 class User < ActiveRecord::Base
-  has_many :workout_rosters
+  has_many :workout_rosters, foreign_key: 'student_id'
 end
